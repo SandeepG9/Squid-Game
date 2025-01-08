@@ -1,0 +1,262 @@
+html{
+  scroll-behavior: smooth;
+}
+
+#root{
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-container{
+  width: 100vw;
+  position: absolute;
+  z-index:3;
+  background:linear-gradient(to right, black, grey);
+}
+
+.navbar-contents-container{
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  margin-right: 100px;
+  font-size: 20px;
+  height: 50px;
+}
+a{
+  color: white;
+  text-decoration: none;
+  margin-right:30px;
+  padding:15px;
+  transition: 0.5s;
+  border-radius:10px;
+}
+a:active{
+  transform: scale(0.95);
+}
+a:hover{
+  cursor: pointer;
+  background-color:black;
+  color:white
+}
+
+.body-container{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(to right,#262727, #2D2C2C,#161111);
+}
+
+.body-container h1{
+  color: white;
+  font-size: 80px;
+}
+
+.body-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.squid{
+  z-index: 2;
+  margin: 0;
+}
+.game{
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body{
+  margin: 0;
+}
+
+.top-right-circle{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: solid 65px #E93F7D;
+  top: -100px;
+  left: 1100px;
+}
+
+.bottom-right-square{
+  position: absolute;
+  top: 610px;
+  right: 1px;
+  height: 100px;
+  width: 150px;
+  overflow: hidden;
+  border-top: 65px solid #E93F7D;
+  border-left: 65px solid #E93F7D;
+  overflow: hidden;
+}
+
+.top-skew{
+  position: absolute;
+  top: -10px;
+  left: 550px;
+  background-color: white;
+  width: 30px;
+  height: 150px;
+  transform: skew(30deg);
+}
+
+.bottom-skew{
+  position: absolute;
+  bottom: -20px;
+  left: 900px;
+  background-color: white;
+  width: 30px;
+  height: 150px;
+  transform: skew(30deg);
+}
+
+/* Section 2 Play Game */
+
+.playgame-container{
+  height: 100vh;
+  width: 100wh;
+  background: linear-gradient(to left, #E93F7D, #BA3969, #531B25);
+} 
+
+@keyframes rotate-square{ 
+  from{
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+  .section2-right-square{
+    transition: 2s;
+    position: absolute;
+    top: 900px;
+    right: 100px;
+    height: 200px;
+    width: 200px;
+    border: 65px solid #E93F7D;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    animation-name:rotate-square;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .section2-profile-circle{
+    position: relative;
+    top: 150px;
+    left: -100px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  .section2-heading{
+    font-size: 30px;
+    position: absolute;
+    left: 600px;
+    top: 900px;
+    color: white;
+  }
+
+  .section2-heading h1{
+    margin: 0;
+  }
+  .section2-play-button p{
+    color: white;
+    width: 400px;
+    position: absolute;
+    left: 650px;
+    top: 1150px;
+  }
+  .section2-play-button button{
+    position: absolute;
+    top: 1320px;
+    left: 700px;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #E93F7D;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    color:white;
+    border: 0;
+    transition: 0.2s;
+  }
+
+  .section2-play-button button:hover{
+    cursor: pointer;
+    background-color: #BA3969;
+  }
+  .section2-play-button button:active{
+    transform: scale(0.95);
+  }
+
+
+  /* Dalgona game section */
+
+.dalgona-game-section{
+  height: 100vh;
+  width: 100wh;
+  background:linear-gradient(to right,#262727, #2D2C2C,#161111);
+  margin: 0;
+}
+.dalgona-game-section{
+  display: flex;
+}
+
+.dalgona-circles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B68400;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.dalgona-circle-shape{
+  border: solid black 2px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: #B68400;
+}
+
+.dalgona-star-shape{
+  width: 150px;
+  height: 150px;
+  background-color:#B68400;
+  transform: rotate(180deg);
+  border: solid 2px black;
+}
+
+.dalgona-description-container{
+  color: white;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.dalgona-description-container h1{
+  margin: 0;
+  font-size: 50px;
+}
+
+.dalgona-description-container p{
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.small-square-dalgona-section{
+  width: 20px;
+  height: 20px;
+  background-color: #E93F7D;
+  display: inline-block;
+  margin-right: 20px;
+}
+
