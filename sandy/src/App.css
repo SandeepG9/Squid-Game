@@ -4,11 +4,11 @@ html{
 
 #root{
   scroll-behavior: smooth;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navbar-container{
-  width: 100vw;
+  width: 99vw;
   position: absolute;
   z-index:3;
   background:linear-gradient(to right, black, grey);
@@ -21,6 +21,7 @@ html{
   margin-right: 100px;
   font-size: 20px;
   height: 50px;
+  font-weight: bolder;
 }
 a{
   color: white;
@@ -58,12 +59,25 @@ a:hover{
 }
 .squid{
   z-index: 2;
-  margin: 0;
+  margin-right: 150px;
+  margin-bottom: 0;
+  margin-top: 25px;
+  animation: fadeIn 3s ease-in forwards;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .game{
   margin-left: 50px;
   margin-top: 0;
   margin-bottom: 0;
+  animation: fadeIn 3s ease-in forwards;
 }
 
 body{
@@ -80,9 +94,14 @@ body{
   left: 1100px;
 }
 
+.left-middle-triangle{
+  position: absolute;
+  left: -100px;
+  top: 250px;
+}
 .bottom-right-square{
   position: absolute;
-  top: 610px;
+  top: 565px;
   right: 1px;
   height: 100px;
   width: 150px;
@@ -94,22 +113,22 @@ body{
 
 .top-skew{
   position: absolute;
-  top: -10px;
+  top: 60px;
   left: 550px;
   background-color: white;
   width: 30px;
   height: 150px;
-  transform: skew(30deg);
+  transform: skew(35deg);
 }
 
 .bottom-skew{
   position: absolute;
-  bottom: -20px;
-  left: 900px;
+  bottom: -16px;
+  left: 850px;
   background-color: white;
   width: 30px;
   height: 150px;
-  transform: skew(30deg);
+  transform: skew(35deg);
 }
 
 /* Section 2 Play Game */
@@ -120,6 +139,8 @@ body{
   background: linear-gradient(to left, #E93F7D, #BA3969, #531B25);
 } 
 
+
+ 
 @keyframes rotate-square{ 
   from{
   }
@@ -137,10 +158,7 @@ body{
     border: 65px solid #E93F7D;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0;
-    animation-name:rotate-square;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-
+    animation: rotate-square 20s linear infinite;
   }
 
   .section2-profile-circle{
@@ -175,17 +193,15 @@ body{
     position: absolute;
     top: 1320px;
     left: 700px;
-    padding: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 10px 28px 10px  28px;
     border-radius: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     background-color: #E93F7D;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     color:white;
     border: 0;
     transition: 0.2s;
+    font-size: 20px;
+    font-weight:600;
   }
 
   .section2-play-button button:hover{
@@ -200,13 +216,21 @@ body{
   /* Dalgona game section */
 
 .dalgona-game-section{
+  position: absolute;
   height: 100vh;
-  width: 100wh;
+  width: 99vw;
   background:linear-gradient(to right,#262727, #2D2C2C,#161111);
-  margin: 0;
-}
-.dalgona-game-section{
+  margin-top: 0;
   display: flex;
+  top: 90px;
+}
+.dalgona-circle-container-1{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.dalgona-circle-container-2{
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 .dalgona-circles{
@@ -259,4 +283,15 @@ body{
   display: inline-block;
   margin-right: 20px;
 }
+.play-button-dalgona{
+  margin-left: 100px;
+  margin-top: 30px;
+}
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #BA3969, #531B25);
+  color: white;
+}

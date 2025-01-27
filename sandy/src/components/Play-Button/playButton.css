@@ -1,0 +1,19 @@
+.play-game-button{
+    padding: 10px 40px 10px  40px;
+    border-radius: 10px;
+    background-color: #E93F7D;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    color:white;
+    border: 0;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight:600;
+}
+.play-game-button:active{
+    transform: scale(0.95);
+}
+
+.play-game-button:hover{
+    background-color: #BA3969;
+    cursor: pointer;
+}

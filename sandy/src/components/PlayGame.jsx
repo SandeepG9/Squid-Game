@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router'
 const PlayGame = () => {
+  const navigate = useNavigate()
   return (
     <div className='playgame-container' id='play-game-section'>
         <div className='section2-right-square'></div>
@@ -10,8 +11,13 @@ const PlayGame = () => {
             <h1 className='section2-play-game'>TO PLAY ?</h1>
         </div>
         <div className='section2-play-button'>
-            <p>Step into a world of intense challenges and thrilling games! Inspired by the hit series, our website brings you a collection of exciting and strategic games where every move counts. Test your skills, compete with others, and see if you have what it takes to rise to the top. Are you ready to play?</p>
-            <button>PLAY GAME</button>
+            <p>Step into a world of intense challenges and thrilling games! 
+              Inspired by the hit series, our website brings you a collection 
+              of exciting and strategic games where every move counts. Test your 
+              skills, compete with others, and see if you have what it takes to 
+              rise to the top. Are you ready to play?
+            </p>
+          <button className='play-game-button' onClick={()=>{navigate('/games')}}>PLAY GAME</button>
         </div>
     </div>
   )

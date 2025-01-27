@@ -1,0 +1,61 @@
+.dalgona-main-containers{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to right ,#202020,#2C2D2C,#242525);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container{
+    width: 75vw;
+    height: 75vh;
+    display: flex;
+    color: white;
+}
+.shape-container{
+    width: 60%;
+    height: 100%;
+    background:linear-gradient(to right ,#3E3F3F,#343534) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to bottom left, #E03D78,#AE3A67,#9C365B,#5c2033);
+}
+.shape-scratch-container{
+    background-color: #BE8B00;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.dalgona-game-button{
+    padding: 10px 40px 10px  40px;
+    border-radius: 10px;
+    background-color: #E93F7D;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    color:white;
+    border: 0;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight:600;
+}
+.dalgona-game-button:active{
+    transform: scale(0.95);
+}
+
+.dalgona-game-button:hover{
+    background-color: #BA3969;
+    cursor: pointer;
+}

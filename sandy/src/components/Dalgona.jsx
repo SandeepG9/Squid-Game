@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PlayButton from './Play-Button/PlayButton'
 const Dalgona = () => {
   return (
     <div className='dalgona-game-section'>
@@ -13,8 +13,8 @@ const Dalgona = () => {
             </div>
         <div className='dalgona-circle-container-2'>
             <div className='dalgona-circles'>
-              <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="50,10 10,90 90,90" stroke="black" stroke-width="1.5" fill="none"/>
+              <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="100,20 20,180 180,180" stroke="black" stroke-width="1.5" fill="none"/>
               </svg></div>
             <div className='dalgona-circles'>
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
@@ -33,6 +33,9 @@ const Dalgona = () => {
             without breaking it. Will you conquer the challenge or crack 
             under pressure? Let the game begin!
           </p>
+          <div className='play-button-dalgona'>
+            <PlayButton/>
+          </div>
         </div>
     </div>
   )
